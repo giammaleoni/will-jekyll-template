@@ -1,18 +1,19 @@
 # Site settings
-title: A blog about lorem ipsum dolor sit amet
-description: A blog about lorem ipsum dolor sit amet
-baseurl: "/will-jekyll-template" # the subpath of your site, e.g. /blog
-url: "https://willianjusten.com.br" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+title: Just a dev
+description: Tutorial, news & more on Angular, Ionic, IoT, api, OpenData
+baseurl: "" # the subpath of your site, e.g. /blog
+# url: "https://giammaleoni.github.io/just-a-blog" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+url: "http://localhost:3000"
 
 # User settings
-username: Lorem Ipsum
-user_description: Anon Developer at Lorem Ipsum Dolor
-user_title: Anon Developer
-email: anon@anon.com
-twitter_username: lorem_ipsum
-github_username:  lorem_ipsum
-gplus_username:  lorem_ipsum
-disqus_username: lorem_ipsum
+username: Gianmaria Leoni
+user_description:
+user_title: Developer
+email: gianmaria.leoni@gmail.com
+twitter_username: giammaleoni
+github_username:  giammeloni
+gplus_username:  +GianmariaLeoni
+disqus_username: giammaleoni
 
 # Build settings
 markdown: kramdown
@@ -32,6 +33,10 @@ compress_html:
 links:
   - title: Home
     url: /
+  - title: News
+    url: /news
+  - title: Tutorials
+    url: /tutorials
   - title: Series
     url: /series
   - title: Tags
@@ -41,3 +46,7 @@ links:
 
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
+
+# extra configuration
+timezone: Europe/Rome
+# future: true

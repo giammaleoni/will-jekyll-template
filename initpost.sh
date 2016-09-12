@@ -35,7 +35,7 @@
 POST_TITLE="${@:2:$(($#-1))}"
 POST_NAME="$(echo ${@:2:$(($#-1))} | sed -e 's/ /-/g' | sed "y/ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefghijklmnopqrstuvwxyz/")"
 CURRENT_DATE="$(date +'%Y-%m-%d')"
-TIME=$(date +"%T")
+# TIME=$(date +"%T")
 # ----------------------------------------------------------------
 
 
@@ -132,7 +132,8 @@ initpost_content() {
 echo "---"
 echo "layout: post"
 echo "title: \"${POST_TITLE}\""
-echo "date: ${CURRENT_DATE} ${TIME}"
+#echo "date: ${CURRENT_DATE} ${TIME}"
+echo "date: ${CURRENT_DATE}"
 echo "image: '/assets/img/'"
 echo "description:"
 echo "tags:"
